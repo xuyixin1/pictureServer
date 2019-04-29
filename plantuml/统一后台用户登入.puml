@@ -1,0 +1,10 @@
+@startuml
+start
+:输入登入地址 /Vicmob_backstage/a/login;
+:后台进入loginControler 的login方法;
+:跳转到登入界面 modules/backstage/account/login.jsp;
+:后台进入sysUserControler的login方法;
+:返回数据到login.jsp;
+:后台进入sysUserControler的toIndex方法;
+:跳转到前端modules/backstage/front/systemManage.jsp;
+@enduml

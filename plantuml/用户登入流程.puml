@@ -1,0 +1,18 @@
+@startuml
+start
+:输入登入地址;
+:后台进入login方法;
+:未查询到用户缓存数据;
+repeat
+:进入登陆界面;
+if(shiro验证) then(yes)
+:进入index方法;
+   if(账号无问题)then(yes)
+   :进入主界面;
+   stop
+   else(no)
+   endif
+else (no)
+:shiro验证失败;
+endif
+@enduml
